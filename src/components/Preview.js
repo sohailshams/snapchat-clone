@@ -41,6 +41,10 @@ function Preview() {
         <TimerIcon />
       </div>
       <img src={cameraImage} alt="user pic" />
+      <div className="preview__footer">
+        <h2>Send Now</h2>
+        <SendIcon className="preview__sendIcon" />
+      </div>
     </div>
   );
 }
