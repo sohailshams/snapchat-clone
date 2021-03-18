@@ -1,21 +1,29 @@
 import React, { useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router';
-import { selectcameraImage } from '../features/cameraSlice';
+import { resetCameraImage, selectcameraImage } from '../features/cameraSlice';
+import CloseIcon from '@material-ui/icons/Close';
 import './Preview.css';
 
 function Preview() {
   const cameraImage = useSelector(selectcameraImage);
   const history = useHistory();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     if (!cameraImage) {
       history.replace('/');
     }
   }, [cameraImage, history]);
+
+  const closePreview = () => {
+    dispatch(resetCameraImage());
+  };
+
   return (
     <div className="preview">
-      <img src={cameraImage} alt="user image" />
+      <CloseIcon onClick={closePreview} className="preview__close" />
+      <img src={cameraImage} alt="user pic" />
     </div>
   );
 }
