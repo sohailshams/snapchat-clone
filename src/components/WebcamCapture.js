@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import Webcam from 'react-webcam';
+import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 
 const videoConstraints = {
   with: 250,
@@ -9,6 +10,7 @@ const videoConstraints = {
 
 function WebcamCapture() {
   const webcamRef = useRef(null);
+
   return (
     <div className="webcamCapture">
       <Webcam
@@ -19,6 +21,7 @@ function WebcamCapture() {
         width={videoConstraints.with}
         videoConstraints={videoConstraints}
       />
+      <RadioButtonUncheckedIcon className="webcamCapture__button" />
     </div>
   );
 }
