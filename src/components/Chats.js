@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Avatar } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 import ChatBubbleIcon from '@material-ui/icons/ChatBubble';
+import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import { auth, db } from '../firebase';
 import './Chats.css';
 import Chat from './Chat';
@@ -56,6 +57,10 @@ function Chats() {
           )
         )}
       </div>
+      <RadioButtonUncheckedIcon
+        className="chats__takePicIcon"
+        fontSize="large"
+      />
     </div>
   );
 }
