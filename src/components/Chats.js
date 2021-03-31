@@ -6,14 +6,16 @@ import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import { auth, db } from '../firebase';
 import './Chats.css';
 import Chat from './Chat';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { selectUser } from '../features/appSlice';
 import { useHistory } from 'react-router';
+import { resetCameraImage } from '../features/cameraSlice';
 
 function Chats() {
   const [posts, setPosts] = useState([]);
   const user = useSelector(selectUser);
   const history = useHistory();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     db.collection('posts')
@@ -29,6 +31,7 @@ function Chats() {
   }, []);
 
   const takeSnap = () => {
+    dispatch(resetCameraImage());
     history.push('/');
   };
 
