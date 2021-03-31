@@ -5,9 +5,12 @@ import ChatBubbleIcon from '@material-ui/icons/ChatBubble';
 import { db } from '../firebase';
 import './Chats.css';
 import Chat from './Chat';
+import { useSelector } from 'react-redux';
+import { selectUser } from '../features/appSlice';
 
 function Chats() {
   const [posts, setPosts] = useState([]);
+  const user = useSelector(selectUser);
 
   useEffect(() => {
     db.collection('posts')
@@ -24,7 +27,7 @@ function Chats() {
   return (
     <div className="chats">
       <div className="chats__header">
-        <Avatar className="chats__avatar" />
+        <Avatar src={user.profilePic} className="chats__avatar" />
         <div className="chats__search">
           <SearchIcon />
           <input placeholder="Friends" type="text" />
