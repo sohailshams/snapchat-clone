@@ -12,7 +12,6 @@
   padding-right: 10px;
   background-color: #059ee0;
   height: 50px;
-  min-width: 255px;
 }
 
 .chats__search {
@@ -45,7 +44,6 @@
 .chats__posts {
   height: 359px;
   background-color: white;
-  min-width: 275px;
   box-shadow: 1px -7px 7px -6px rgba(0, 0, 0, 0.44);
   margin-top: -9px;
   border-top-left-radius: 10px;
