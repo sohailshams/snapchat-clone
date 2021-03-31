@@ -8,10 +8,12 @@ import './Chats.css';
 import Chat from './Chat';
 import { useSelector } from 'react-redux';
 import { selectUser } from '../features/appSlice';
+import { useHistory } from 'react-router';
 
 function Chats() {
   const [posts, setPosts] = useState([]);
   const user = useSelector(selectUser);
+  const history = useHistory();
 
   useEffect(() => {
     db.collection('posts')
@@ -25,6 +27,11 @@ function Chats() {
         )
       );
   }, []);
+
+  const takeSnap = () => {
+    history.push('/');
+  };
+
   return (
     <div className="chats">
       <div className="chats__header">
@@ -60,6 +67,7 @@ function Chats() {
       <RadioButtonUncheckedIcon
         className="chats__takePicIcon"
         fontSize="large"
+        onClick={takeSnap}
       />
     </div>
   );
