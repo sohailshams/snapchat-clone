@@ -53,6 +53,15 @@
   overflow: scroll;
 }
 
+.chats__searchIcon {
+  color: white;
+  font-size: 13px !important;
+}
+
+.chats__chatIcon {
+  color: white;
+  font-size: 18px !important;
+}
 .chats__takePicIcon {
   position: absolute;
   background-color: white;

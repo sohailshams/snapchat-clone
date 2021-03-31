@@ -41,7 +41,7 @@ function Chats() {
           className="chats__avatar"
         />
         <div className="chats__search">
-          <SearchIcon />
+          <SearchIcon className="chats__searchIcon" />
           <input placeholder="Friends" type="text" />
         </div>
         <ChatBubbleIcon className="chats__chatIcon" />
