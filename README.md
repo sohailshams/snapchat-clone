@@ -1,68 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Snapchat-Clone
 
-## Available Scripts
+## React.js project Snapchat-Clone (with Camera, Redux & Firebase)
 
-In the project directory, you can run:
+## Description
 
-### `yarn start`
+Snapchat-Clone is developed in connection to my learning of **React**. Users can log in using gmail account and take pictures which are stored in the **firebase database**. User can also view the pictures that user has taken.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- **HTML5** - HTML5 is used to create the the structure of the website.
+- **CSS3** - CSS3 is used for custom styling the HTML5 elements.
+- **[React](https://reactjs.org/)** - React functional components are used to developed this application.
+- **[Redux](https://redux.js.org/)** - This application is powered by Redux.
+- **React Hooks** - React hooks **useEffect**, **useDispatch** and **useHistory**.
+- **BEM** - BEM naming convention is used to give class name.
+- **Google Authentication** - Used to authenticate the user at login.
+- **[React Webcam](https://www.npmjs.com/package/react-webcam)** - Used to take picture.
+- **[Material UI](https://material-ui.com/)** - Icons in this application are used from Material UI.
+- **[Ract Router Dom](https://reactrouter.com/web/guides/quick-start)** - Used to navigate within the pages.
+- **[Ract Timeago](https://www.npmjs.com/package/react-time-ago)** - Used to display time in time ago format.
+- **[Ract Countdown Circle Timer](https://www.npmjs.com/package/react-countdown-circle-timer)** - Used to display circle timer.
+- **[Git](https://git-scm.com/)** - Used as a distributed version control system.
+- **[VS Code](https://code.visualstudio.com/)** - Used as an IDE.
+- **[Github](https://github.com/)** - Used as a remote repository.
 
-### `yarn test`
+## Database
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **[Firebase](https://firebase.google.com/)** databse is used in the development and in production.
 
-### `yarn build`
+## Deployment
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The deployed project and project's **github repository** can be viewed on following links. To test card payments use
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- **[Snapchat Clone Live Page](https://snapchat-clone-853d8.web.app/)**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **[Snapchat Clone Live Page Github Repository](https://github.com/sohailshams/snapchat-clone)**
 
-### `yarn eject`
+## Credits
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Media
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Logo is taken from [Google](https://www.google.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Acknowledgements
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. PAPA FAM'S **Snapchat Clone** project was great source of inspiration. I followed it to design and develop my **Snapchat Clone** application.
+2. I would like thank my lovely wife **Ayesha**, my sons **Ibrahim** and **Ismail** for their support and motivation.
 
-## Learn More
+## Disclaimer
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is for educational purposes only.
