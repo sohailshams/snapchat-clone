@@ -28,7 +28,7 @@ function App() {
         dispatch(logout());
       }
     });
-  });
+  }, []);
   return (
     <div className="app">
       <Router>
@@ -44,13 +44,13 @@ function App() {
             <div className="app__body">
               <div className="app__bodyBackground">
                 <Switch>
-                  <Route exact path="/chats/view">
+                  <Route path="/chats/view">
                     <ChatView />
                   </Route>
-                  <Route exact path="/chats">
+                  <Route path="/chats">
                     <Chats />
                   </Route>
-                  <Route exact path="/preview">
+                  <Route path="/preview">
                     <Preview />
                   </Route>
                   <Route exact path="/">
