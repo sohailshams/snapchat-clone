@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   background-color: #fefc01;
-  height: 100vh;
+  height: 100%;
 }
 
 .app__logo {
@@ -19,6 +19,7 @@
   height: 400px;
   width: 249px;
   padding: 74px;
+  margin-bottom: 20px;
 }
 
 .app__bodyBackground {
