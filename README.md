@@ -30,11 +30,11 @@ Snapchat-Clone is developed in connection to my learning of **React**. Users can
 
 ## Deployment
 
-The deployed project and project's **github repository** can be viewed on following links. To test card payments use
+The deployed project and project's **github repository** can be viewed on following links.
 
 - **[Snapchat Clone Live Page](https://snapchat-clone-853d8.web.app/)**
 
-- **[Snapchat Clone Live Page Github Repository](https://github.com/sohailshams/snapchat-clone)**
+- **[Snapchat Clone Github Repository](https://github.com/sohailshams/snapchat-clone)**
 
 ## Credits
 
